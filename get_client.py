@@ -6,7 +6,7 @@ from scraper import Scraper
 
 class GetClient:
     def __init__(self):
-        self.con = mysql.connector.connect(pool_name="mypool", pool_size=10, **config['config']['db'])
+        self.con = mysql.connector.connect(pool_name="mypool", pool_size=10, charset='utf8', **config['config']['db'])
         self.cur = self.con.cursor(dictionary=True, buffered=True)
 
     # def get_provider_information(self):
