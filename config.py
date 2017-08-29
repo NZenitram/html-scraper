@@ -1,3 +1,5 @@
+import os
+
 config = {
     'providers' : {
         'outlook': 1,
@@ -18,5 +20,6 @@ config = {
             'passwd': '',
             'db': 'html_scraper'
             }
-         }
+    }
+
 }
